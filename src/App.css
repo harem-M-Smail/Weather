@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #0B131E;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
+  padding-left: 10px;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+.search-input{
+  background-color: #202B3B;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  height: 40px;
+  min-width: 260px;
+  width: 30%;
+  border-radius: 12px;
+  border: none;
+  padding-left: 10px;
+}
+.region-name{
+  padding-left: 10px;
+  color: #DCDFE4;
+}
+.container{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 45%;
+  height: 300px;
+  color: white;
+  border: 1px solid #202B3B;
+}
+.container .top{
+  display: flex;
+  height: 43%;
+}
+.container .top *{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50%;
+}
+.container .top .top-left{
+  padding: 5%;
+}
+.container .top .top-left p{
+  
+}
+.weather-condition-icon{
+  max-width: 45%;
+}
+.container .top .top-right{
+  gap: 10px;
+  flex-direction: column;
+}
+.container .center{
+  display: flex;
+  align-items: center;
+  padding-left:68%;
+  height: 12%;
+  font-size: 30px;
+}
+.container .bottom{
+  height: 45%;
+}
+.forecast{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.day{
+  text-align: center;
+}
+.error-page,.not-found{
+  background-color: #202B3B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   color: white;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.App-link {
-  color: #61dafb;
+.error-container,.not-found-container{
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-message,.back-to-home-link{
+  color: rgb(217, 255, 0);
 }
